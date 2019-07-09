@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.conf.urls import *
 from . import view
+from system import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
@@ -24,8 +25,8 @@ urlpatterns = [
     url(r'^search_get$', view.search_get),
     url(r'^search_post$', view.search_post),
 
-    url(r'^user_list$', view.user_list),
-    url(r'^user_add$', view.user_add),
-    url(r'^user_update$', view.user_update),
+    url(r'^user_list$', views.user_list),
+    url(r'^user_add$', views.user_add),
+    url(r'^user_update$', views.user_update),
 
 ]

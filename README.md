@@ -11,6 +11,7 @@ pip install -r requires
 django-admin startapp system
 
 --生成表结构
+python manage.py makemigrations system  # 清理库表
 python manage.py migrate system
 
 --运行:
