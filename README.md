@@ -1,13 +1,17 @@
-Django==2.1.4
-mysqlclient==1.3.8
-celery==4.2.1
-django-celery-beat==1.1.1
-
 --新建初始化项目:
 django-admin.py startproject pythonweb
 
+1、导出依赖包
+pip freeze > requires
+
+2、安装依赖包
+pip install -r requires
+
+-- 定义模型 
+django-admin startapp system
+
 --生成表结构
-python manage.py migrate TestModel
+python manage.py migrate system
 
 --运行:
 python manage.py runserver 0.0.0.0:8000

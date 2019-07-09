@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'TestModel',
+    'system',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'pythonweb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
+        'NAME': 'python_test',
         'USER': 'root',
         'PASSWORD': 'root',
         'HOST': 'localhost',
