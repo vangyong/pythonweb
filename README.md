@@ -1,11 +1,13 @@
 --新建初始化项目:
-django-admin.py startproject pythonweb
+django-admin startproject pythonweb
 
 1、导出依赖包
-pip freeze > requires
+pip freeze > requirements
+pip install -r requirements
 
-2、安装依赖包
-pip install -r requires
+conda list -e > requirements
+conda install --yes --file requirements  
+
 
 -- 定义模型 
 django-admin startapp system
